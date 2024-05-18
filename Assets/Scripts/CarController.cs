@@ -15,7 +15,7 @@ public class CarController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bool brakeEngaged = Input.GetKey(KeyCode.Space);
+        bool brakeEngaged = Input.GetKey(KeyCode.LeftShift);
         for (int i = 0; i < 4; i++)
         {
             var col = wheels[i].GetComponent<WheelCollider>();
